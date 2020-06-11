@@ -1,5 +1,6 @@
 /*!
 * jquery.countup.js 1.0.3
+git branch master
 *
 * Copyright 2016, Adrián Guerra Marrero http://agmstudio.io @AGMStudio_io
 * Released under the MIT License
