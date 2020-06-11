@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT Work+Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <!-- OLD CAROUSEL -->
+    <link rel="stylesheet" href="./css/owl.carousel.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+    <title>CINEMA</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <a href="#">
+            <img src="./img/web-logo.png" alt="">
+        </a>
+        <nav class="header__nav">
+            <ul>
+                <li class="active"><a href="#">Lich chieu</a></li>
+                <li><a href="#">Cum Rap</a></li>
+                <li><a href="#">Tin tuc</a></li>
+                <li><a href="#">Ung dung</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="header__login">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <span>Login</span>
+
+            
+        </a>
+    </header>
+    <!-- CAROUSEL -->
+    <section class="carousel">
+        <div class="carousel__content">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <img src="./img/slider1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <img src="./img/slider2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide slide3">
+                        <img src="./img/slider3.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide slide4">
+                        <img src="./img/slider4.jpg" alt="">
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-white"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+        </div>
+    </section>
+    <!-- MOVIE -->
+    <section class="movie" id="movie">
+        <h1 class="section__title">
+            <span class="active">Dang Chieu</span>
+            <span>Sap chieu</span>
+        </h1>
+        <div class="movie__content owl-carousel owl-theme">
+            <div class="movie__items item">
+                <img src="./img/sinh-nhat-chet-choc-happy-death-day-c16-15089876590397.jpg" alt="">
+                <p>Sinh nhat chet choc</p>
+                <button class="see__more">See more</button>
+            </div>
+            <div class="movie__items item">
+                <img src="./img/trai-nghiem-diem-chet-flatliners-15093522963475.jpg" alt="">
+                <p>Sinh nhat chet choc</p>
+                <button class="see__more">See more</button>
+            </div>
+            <div class="movie__items item">
+                <img src="./img/star-wars-jedi-cuoi-cung.jpg" alt="">
+                <p>Sinh nhat chet choc</p>
+                <button class="see__more">See more</button>
+            </div>
+            <div class="movie__items item">
+                <img src="./img/thor-ragnarok-15088151416399.jpg" alt="">
+                <p>Sinh nhat chet choc</p>
+                <button class="see__more">See more</button>
+            </div>
+            <div class="movie__items item">
+                <img src="./img/trum-huong-cang-chasing-the-dragon-15088270130890.jpg" alt="">
+                <p>Sinh nhat chet choc</p>
+                <button class="see__more">See more</button>
+            </div>
+            <div class="movie__items item">
+                <img src="./img/trai-nghiem-diem-chet-flatliners-15093522963475.jpg" alt="">
+                <p>Sinh nhat chet choc</p>
+                <button class="see__more">See more</button>
+            </div>
+            <div class="movie__items item">
+                <img src="./img/phao-hoa-nen-ngam-tu-duoi-hay-ben-canh-15088436147700.jpg" alt="">
+                <p>Sinh nhat chet choc</p>
+                <button class="see__more">See more</button>
+            </div>
+            <div class="movie__items item">
+                <img src="./img/nhoc-ma-sieu-quay-the-little-vampire-3d-15090331183157.jpg" alt="">
+                <p>Sinh nhat chet choc</p>
+                <button class="see__more">See more</button>
+            </div>
+            <div class="movie__items item">
+                <img src="./img/hiem-hoa-rung-chet-jungle-15095199102590.jpg" alt="">
+                <p>Sinh nhat chet choc</p>
+                <button class="see__more">See more</button>
+            </div>
+        </div>
+    </section>
+    <!-- add in library -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- SWIPER -->
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            effect: 'fade',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <!-- carousel -->
+    <script src="./js/owl.carousel.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
